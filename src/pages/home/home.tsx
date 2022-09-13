@@ -1,8 +1,6 @@
 import React from 'react';
-import Card from '../../component/card/card';
-import Heart from '../../assets/suits/heart';
-import Spade from '../../assets/suits/spade';
 
+import Card from '../../component/card/card';
 import './styles.scss';
 
 export const Home = () => {
@@ -13,7 +11,7 @@ export const Home = () => {
       justifyContent: 'space-between',
       width: '7%'
     }}>
-      <Card color="red" value={'J'} suit="heart" /><Card value={'K'}/>
+      <Card color="red" value={'10'} suit="heart" /><Card suit="spade" value={'K'}/>
     </div>)
 }
 
