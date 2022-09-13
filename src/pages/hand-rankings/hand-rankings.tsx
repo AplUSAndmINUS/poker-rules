@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles';
+import './styles.scss';
 
 export const Rankings = () => {
   return (<h1>I am the hand rankings!</h1>)

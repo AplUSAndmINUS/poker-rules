@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles';
+import './styles.scss';
 
 export const Home = () => {
   return (<h1>I am the main homepage!</h1>);
