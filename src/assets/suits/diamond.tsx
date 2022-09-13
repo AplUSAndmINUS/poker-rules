@@ -3,7 +3,7 @@ import { SuitProps } from './spade';
 
 import '../../styles/color.scss';
 
-export const Diamond = ({ color = '#830E0D', size }: SuitProps) => {
+export const Diamond = ({ color = '#D11613', size }: SuitProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

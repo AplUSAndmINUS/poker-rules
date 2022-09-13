@@ -11,7 +11,7 @@ export const Home = () => {
       justifyContent: 'space-between',
       width: '7%'
     }}>
-      <Card /><Card />
+      <Card color="red" /><Card />
     </div>)
 }
 
