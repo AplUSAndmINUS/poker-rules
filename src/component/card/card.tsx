@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import Club from '../../assets/suits/club';
 
-import './styles.scss';
+import { CardValue, StyledCard } from './styled';
 
-interface PokerCardProps {
+export interface PokerCardProps {
   color?: string;
   suit: JSX.Element;
   value: string;
@@ -12,7 +12,10 @@ interface PokerCardProps {
 export const PokerCard = ({ color, suit, value }: PokerCardProps) => {
   return (
     <>
-      <Card />
+      <StyledCard>
+        <CardValue className="cardStyle">10</CardValue>
+        <Club size={24} />
+      </StyledCard>
     </>)
 };
 
