@@ -16,7 +16,5 @@ export const StyledCard = styled(Card)`
 `;
 
 export const CardValue = styled.h3<PokerCardProps>`
-  text-color: ${(props) => props.color
-    ? props.color
-    : '#000000'};
+  text-color: ${(props) => props.color};
 `
