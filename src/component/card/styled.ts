@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { Card } from 'react-bootstrap';
 
-import '../../styles/main.scss';
-
 import { PokerCardProps } from './card';
 
 export const StyledCard = styled(Card)`

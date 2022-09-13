@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './styles.scss';
+import '../../styles/color.scss';
 
 export interface SuitProps {
   color?: string;
   size: number | string;
 }
 
-export const Spade = ({ color, size }: SuitProps) => {
+export const Spade = ({ color = '#000000', size }: SuitProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

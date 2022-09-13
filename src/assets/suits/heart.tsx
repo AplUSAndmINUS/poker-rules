@@ -1,7 +1,7 @@
 import React from 'react';
 import { SuitProps } from './spade';
 
-import './styles.scss';
+import '../../styles/color.scss';
 
 export const Heart = ({ color = '#830E0D', size }: SuitProps) => {
   return (

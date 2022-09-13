@@ -1,9 +1,9 @@
 import React from 'react';
 import { SuitProps } from './spade';
 
-import './styles.scss';
+import '../../styles/color.scss';
 
-export const Club = ({ color, size }: SuitProps) => {
+export const Club = ({ color = '#000000', size }: SuitProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
