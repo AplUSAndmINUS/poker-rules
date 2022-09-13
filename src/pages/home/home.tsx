@@ -1,9 +1,10 @@
 import React from 'react';
+import Card from '../../component/card/card';
 
 import './styles.scss';
 
 export const Home = () => {
-  return (<h1>I am the main homepage!</h1>);
+  return (<><Card /></>)
 }
 
 export default Home;
