@@ -1,6 +1,8 @@
 import styled from 'styled-components';
-import { Navbar } from 'react-bootstrap';
+import { Anchor } from 'react-bootstrap';
 
-export const NavigationBar = styled(Navbar)`
-  background-color: #35654D;
+export const StyledAnchor = styled(Anchor)`
+  text-decoration: none;
+  color: #FFFFFF !important;
+  font-weight: 700;
 `
