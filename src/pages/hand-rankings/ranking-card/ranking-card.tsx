@@ -2,6 +2,7 @@ import React from 'react';
 
 import PokerCard from '../../../component/card/card';
 import { Cards } from '../../../assets/constants/rankings';
+import { Card } from './styled';
 import './styled'; 
 
 interface RankingCardProps {
@@ -14,6 +15,7 @@ interface RankingCardProps {
   heading: string;
 }
 
+// styling for tablet desktop needs to have cards stack 6x6 cols instead of 12cols
 export const RankingCard = ({
   card1,
   card2,
@@ -23,9 +25,7 @@ export const RankingCard = ({
   description,
   heading }: RankingCardProps) => {
   return (
-    <div
-      className="d-flex flex-column align-items-space-between justify-content-center m-4"
-      style={{ border: '1px solid #FFFFFF', borderRadius: '8px', boxShadow: '4px 4px 4px rgba(0,0,0,0.6)', backgroundColor: '#35654D' }}>
+    <Card className="d-flex flex-column align-items-space-between justify-content-center m-4">
       <div className="d-flex flex-row justify-content-left align-items-baseline px-3 pt-3 pb-2">
         <PokerCard
           color={card1.color}
@@ -33,9 +33,9 @@ export const RankingCard = ({
           suit={card1.suit}
           value={card1.value} />
       </div>
-      <h3 className="ps-3 mb-0">{heading}</h3>
+      <h3 className="ps-3 mb-1">{heading}</h3>
       <p className="mx-3 font-weight-bold" style={{ lineHeight: '20px' }}>{description}</p>
-    </div>
+    </Card>
   ) 
 };
 
