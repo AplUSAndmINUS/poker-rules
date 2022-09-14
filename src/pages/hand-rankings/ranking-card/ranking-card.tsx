@@ -25,7 +25,7 @@ export const RankingCard = ({
   description,
   heading }: RankingCardProps) => {
   return (
-    <Card className="d-flex flex-column align-items-space-between justify-content-center mx-4 mt-3">
+    <Card className="d-flex flex-column align-items-space-between justify-content-center mx-4 mt-3 pt-0">
       <div className="d-flex flex-row justify-content-left align-items-baseline px-3 pt-3 pb-2">
         <PokerCard
           color={card1.color}
