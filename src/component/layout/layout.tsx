@@ -2,7 +2,6 @@ import React from 'react';
 import { Button, ButtonGroup, Navbar } from 'react-bootstrap';
 
 import logo from '../../assets/images/poker-hand.png';
-import { StyledAnchor } from './styled';
 
 export const NavBar = () => {
   return (
@@ -33,23 +32,17 @@ export const NavBar = () => {
         <Anchor href="/home" className="navbar-brand" style={{ display: 'flex' }}>
         </Anchor> 
         <div className="navbar-nav justify-content-left align-items-center"> */}
-        <Navbar.Brand href="/home">
-          <img
-            src={logo}
-            width="32"
-            height="32"
-            alt="Poker Reference Guide logo" />
+      <Navbar.Brand href="/home">
+        <img
+          src={logo}
+          width="32"
+          height="32"
+          alt="Poker Reference Guide logo" />
       </Navbar.Brand>
       <ButtonGroup aria-label="Navigation options">
-        <StyledAnchor className="nav-item nav-link active me-1" href="/home">
-          <Button variant="outline-light">Home</Button>
-        </StyledAnchor>
-        <StyledAnchor className="nav-item nav-link me-1" href="/games">
-          <Button variant="outline-light">Games</Button>
-        </StyledAnchor>
-        <StyledAnchor className="nav-item nav-link" href="/rankings">
-          <Button variant="outline-light">Hand Rankings</Button>
-        </StyledAnchor>
+        <Button href="/home" variant="outline-light">Home</Button>
+        <Button href="/games" variant="outline-light">Games</Button>
+        <Button href="rankings" variant="outline-light">Hand Rankings</Button>
       </ButtonGroup>
         {/* <StyledAnchor className="nav-item nav-link disabled me-3" href="/home">Glossary</StyledAnchor> */}
     </Navbar>
