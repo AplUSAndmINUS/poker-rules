@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
+import { Button, ButtonGroup, Navbar } from 'react-bootstrap';
 
 import logo from '../../assets/images/poker-hand.png';
 import { StyledAnchor } from './styled';
@@ -7,7 +7,7 @@ import { StyledAnchor } from './styled';
 export const NavBar = () => {
   return (
     <Navbar expand="md" style={{ backgroundColor: "#35654D" }}
-      className="navbar navbar-light sticky-top px-3">
+      className="navbar navbar-light sticky-top px-2">
       {/* <Container>
         <Button 
           type="button"
@@ -39,10 +39,18 @@ export const NavBar = () => {
             width="32"
             height="32"
             alt="Poker Reference Guide logo" />
-        </Navbar.Brand>
-        <StyledAnchor className="nav-item nav-link active me-3" href="/home">Home</StyledAnchor>
-        <StyledAnchor className="nav-item nav-link me-3" href="/games">Games</StyledAnchor>
-        <StyledAnchor className="nav-item nav-link me-3" href="/rankings">Hand Rankings</StyledAnchor>
+      </Navbar.Brand>
+      <ButtonGroup aria-label="Navigation options">
+        <StyledAnchor className="nav-item nav-link active me-1" href="/home">
+          <Button variant="outline-light">Home</Button>
+        </StyledAnchor>
+        <StyledAnchor className="nav-item nav-link me-1" href="/games">
+          <Button variant="outline-light">Games</Button>
+        </StyledAnchor>
+        <StyledAnchor className="nav-item nav-link" href="/rankings">
+          <Button variant="outline-light">Hand Rankings</Button>
+        </StyledAnchor>
+      </ButtonGroup>
         {/* <StyledAnchor className="nav-item nav-link disabled me-3" href="/home">Glossary</StyledAnchor> */}
     </Navbar>
   )

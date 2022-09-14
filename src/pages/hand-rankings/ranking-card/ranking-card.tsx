@@ -54,7 +54,7 @@ export const RankingCard = ({
           value={card5.value} />
       </div>
       <h3 className="ps-3 mb-1">{heading}</h3>
-      <p className="mx-3 font-weight-bold" style={{ lineHeight: '20px' }}>{description}</p>
+      <p className="mx-3 font-weight-bold lh-sm">{description}</p>
     </Card>
   ) 
 };
