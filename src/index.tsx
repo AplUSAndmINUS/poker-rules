@@ -19,7 +19,6 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="home" element={<Home />} />
         <Route path="glossary" element={<Glossary />} />
         <Route path="rules" element={<Rules />} />
         <Route path="rankings" element={<Rankings />} />
