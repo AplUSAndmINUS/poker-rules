@@ -1,248 +1,312 @@
-export const CARD_RANKINGS_CARDS = [
+interface Cards {
+  color: string;
+  isOpaque: boolean;
+  suit: string;
+  value: number | string;
+}
+
+// need to be split into individual arrays later
+export const CARD_RANKINGS_CARDS: Cards[] = [
+  { // royal flush
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: '10',
+  },
   {
-    cards: [
-      { // royal flush
-        color: 'red',
-        isOpaque: true,
-        suit: 'diamond',
-        value: 10,
-      },
-      {
-        color: 'red',
-        isOpaque: true,
-        suit: 'diamond',
-        value: 'J',
-      },
-      {
-        color: 'red',
-        isOpaque: true,
-        suit: 'diamond',
-        value: 'Q',
-      },
-      {
-        color: 'red',
-        isOpaque: true,
-        suit: 'diamond',
-        value: 'K',
-      },
-      {
-        color: 'red',
-        isOpaque: true,
-        suit: 'diamond',
-        value: 'A',
-      },
-      { // straight flush
-        color: 'black',
-        isOpaque: true,
-        suit: 'spade',
-        value: 4,
-      },
-      {
-        color: 'black',
-        isOpaque: true,
-        suit: 'spade',
-        value: 5,
-      },
-      {
-        color: 'black',
-        isOpaque: true,
-        suit: 'spade',
-        value: 6,
-      },
-      {
-        color: 'black',
-        isOpaque: true,
-        suit: 'spade',
-        value: 7,
-      },
-      {
-        color: 'black',
-        isOpaque: true,
-        suit: 'spade',
-        value: 8,
-      },
-      { // four of a kind
-        color: 'red',
-        isOpaque: true,
-        suit: 'diamond',
-        value: 'Q',
-      },
-      {
-        color: 'black',
-        isOpaque: true,
-        suit: 'club',
-        value: 'Q',
-      },
-      {
-        color: 'black',
-        isOpaque: true,
-        suit: 'spade',
-        value: 'Q',
-      },
-      {
-        color: 'red',
-        isOpaque: true,
-        suit: 'heart',
-        value: '7',
-      },
-      {
-        color: 'red',
-        isOpaque: false,
-        suit: 'diamond',
-        value: 'A',
-      },
-      { // royal flush
-        color: 'red',
-        suit: 'diamond',
-        value: 10,
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'J',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'Q',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'K',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'A',
-      },
-      { // royal flush
-        color: 'red',
-        suit: 'diamond',
-        value: 10,
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'J',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'Q',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'K',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'A',
-      },
-      { // royal flush
-        color: 'red',
-        suit: 'diamond',
-        value: 10,
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'J',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'Q',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'K',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'A',
-      },
-      { // royal flush
-        color: 'red',
-        suit: 'diamond',
-        value: 10,
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'J',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'Q',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'K',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'A',
-      },
-      { // royal flush
-        color: 'red',
-        suit: 'diamond',
-        value: 10,
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'J',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'Q',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'K',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'A',
-      },
-      { // royal flush
-        color: 'red',
-        suit: 'diamond',
-        value: 10,
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'J',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'Q',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'K',
-      },
-      {
-        color: 'red',
-        suit: 'diamond',
-        value: 'A',
-      },
-    ]
-  }   
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: 'J',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: 'Q',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: 'K',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: 'A',
+  }, // end royal flush
+  { // straight flush
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: '4',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: '5',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: '6',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: '7',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: '8',
+  }, // end straight flush
+  { // four of a kind
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: 'Q',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'club',
+    value: 'Q',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: 'Q',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'heart',
+    value: 'Q',
+  },
+  {
+    color: 'red',
+    isOpaque: false,
+    suit: 'diamond',
+    value: '7',
+  }, // end four of a kind
+  { // full house
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: '2',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'club',
+    value: '2',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'heart',
+    value: '2',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'heart',
+    value: 'J',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: 'J',
+  }, // end full house
+  { // flush
+    color: 'black',
+    isOpaque: true,
+    suit: 'club',
+    value: 'K',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'club',
+    value: '3',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'club',
+    value: '9',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'club',
+    value: '7',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'club',
+    value: '10',
+  }, // end flush
+  { // straight
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: 'A',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'club',
+    value: '2',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: '3',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'heart',
+    value: '4',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'diamond',
+    value: '5',
+  }, // end straight
+  { // three of a kind
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: '7',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: '7',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'heart',
+    value: '7',
+  },
+  {
+    color: 'red',
+    isOpaque: false,
+    suit: 'heart',
+    value: 'A',
+  },
+  {
+    color: 'red',
+    isOpaque: false,
+    suit: 'diamond',
+    value: '4',
+  }, // end three of a kind
+  { // two pair
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: 'K',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'club',
+    value: 'K',
+  },
+  {
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: '9',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'heart',
+    value: '9',
+  },
+  {
+    color: 'red',
+    isOpaque: false,
+    suit: 'diamond',
+    value: '4',
+  }, // end two pair
+  { // pair
+    color: 'black',
+    isOpaque: true,
+    suit: 'spade',
+    value: 'Q',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'diamond',
+    value: 'Q',
+  },
+  {
+    color: 'black',
+    isOpaque: false,
+    suit: 'spade',
+    value: '4',
+  },
+  {
+    color: 'red',
+    isOpaque: false,
+    suit: 'heart',
+    value: '7',
+  },
+  {
+    color: 'black',
+    isOpaque: false,
+    suit: 'spade',
+    value: 'A',
+  }, // end pair
+  { // high card
+    color: 'black',
+    isOpaque: true,
+    suit: 'club',
+    value: 'K',
+  },
+  {
+    color: 'black',
+    isOpaque: false,
+    suit: 'club',
+    value: '9',
+  },
+  {
+    color: 'black',
+    isOpaque: false,
+    suit: 'spade',
+    value: '4',
+  },
+  {
+    color: 'red',
+    isOpaque: false,
+    suit: 'heart',
+    value: '10',
+  },
+  {
+    color: 'black',
+    isOpaque: false,
+    suit: 'spade',
+    value: '2',
+  } // end high card
 ]
 
 export const CARD_RANKINGS_TEXT = [

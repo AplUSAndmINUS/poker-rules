@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { CARD_RANKINGS_CARDS, CARD_RANKINGS_TEXT } from '../../../assets/constants/rankings';
 import PokerCard from '../../../component/card/card';
 import './styled'; 
 
@@ -28,10 +27,10 @@ export const RankingCard = ({
       style={{ border: '1px solid #FFFFFF', borderRadius: '8px', boxShadow: '4px 4px 4px rgba(0,0,0,0.6)', backgroundColor: '#35654D' }}>
       <div className="d-flex flex-row justify-content-left align-items-baseline px-3 pt-3 pb-2">
         <PokerCard
-          color={CARD_RANKINGS_CARDS[0].cards[0].color}
-          isOpaque={CARD_RANKINGS_CARDS[0].cards[0].isOpaque}
-          suit={CARD_RANKINGS_CARDS[0].cards[0].suit}
-          value={CARD_RANKINGS_CARDS[0].cards[0].value} />
+          color={card1.color}
+          isOpaque={card1.isOpaque}
+          suit={card1.suit}
+          value={card1.value} />
         <PokerCard
           color={CARD_RANKINGS_CARDS[0].cards[1].color}
           isOpaque={CARD_RANKINGS_CARDS[0].cards[1].isOpaque}
