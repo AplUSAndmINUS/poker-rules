@@ -22,6 +22,7 @@ export const StyledCard = styled(Card)<{ isOpaque: boolean }>`
   justify-content: center;
   padding: 4px;
   margin-right: 4px;
+  max-width: 350px;
   opacity: ${props => props.isOpaque === true 
     ? 1
     : 0.5};

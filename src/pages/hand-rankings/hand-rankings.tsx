@@ -5,6 +5,7 @@ import RankingCard from './ranking-card/ranking-card';
 import Title from '../../component/title/title';
 import './styled';
 
+// need to fix max-width issue by adding Containers, Rows, Cols
 export const Rankings = () => {
   return (
     <div className="d-flex flex-column align-items-center">
