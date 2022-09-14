@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Title from '../../component/title/title';
-import './styles.scss';
-import './styled';
+import { CARD_RANKINGS_CARDS, CARD_RANKINGS_TEXT } from '../../assets/constants/rankings';
 import RankingCard from './ranking-card/ranking-card';
+import Title from '../../component/title/title';
+import './styled';
 
 export const Rankings = () => {
   return (
