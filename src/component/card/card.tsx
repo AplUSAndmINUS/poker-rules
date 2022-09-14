@@ -8,12 +8,14 @@ import { Heading, StyledCard } from './styled';
 
 export interface PokerCardProps {
   color?: string;
+  isOpaque?: boolean;
   suit: string;
   value: number | string;
 }
 
 export const PokerCard = ({
   color = 'black',
+  isOpaque = true,
   suit = 'club',
   value = 10 }: PokerCardProps) => {
   const getSuit = (suit: string) => {
@@ -32,7 +34,7 @@ export const PokerCard = ({
   }
   
   return (
-    <StyledCard>
+    <StyledCard isOpaque={isOpaque}>
       <Heading className="cardStyle" color={color}>{value}</Heading>
       {getSuit(suit)}
     </StyledCard>)

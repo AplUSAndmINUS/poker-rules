@@ -29,22 +29,27 @@ export const RankingCard = ({
       <div className="d-flex flex-row justify-content-left align-items-baseline px-3 pt-3 pb-2">
         <PokerCard
           color={CARD_RANKINGS_CARDS[0].cards[0].color}
+          isOpaque={CARD_RANKINGS_CARDS[0].cards[0].isOpaque}
           suit={CARD_RANKINGS_CARDS[0].cards[0].suit}
           value={CARD_RANKINGS_CARDS[0].cards[0].value} />
         <PokerCard
           color={CARD_RANKINGS_CARDS[0].cards[1].color}
+          isOpaque={CARD_RANKINGS_CARDS[0].cards[1].isOpaque}
           suit={CARD_RANKINGS_CARDS[0].cards[1].suit}
           value={CARD_RANKINGS_CARDS[0].cards[1].value} />
         <PokerCard
           color={CARD_RANKINGS_CARDS[0].cards[2].color}
+          isOpaque={CARD_RANKINGS_CARDS[0].cards[2].isOpaque}
           suit={CARD_RANKINGS_CARDS[0].cards[2].suit}
           value={CARD_RANKINGS_CARDS[0].cards[2].value} />
         <PokerCard
           color={CARD_RANKINGS_CARDS[0].cards[3].color}
+          isOpaque={CARD_RANKINGS_CARDS[0].cards[3].isOpaque}
           suit={CARD_RANKINGS_CARDS[0].cards[3].suit}
           value={CARD_RANKINGS_CARDS[0].cards[3].value} />
         <PokerCard
           color={CARD_RANKINGS_CARDS[0].cards[4].color}
+          isOpaque={CARD_RANKINGS_CARDS[0].cards[4].isOpaque}
           suit={CARD_RANKINGS_CARDS[0].cards[4].suit}
           value={CARD_RANKINGS_CARDS[0].cards[4].value} />
       </div>

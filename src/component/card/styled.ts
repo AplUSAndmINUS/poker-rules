@@ -11,15 +11,21 @@ export const Heading = styled.h3<{ color: string }>`
   font-size: 27px; 
 `;
 
-export const StyledCard = styled(Card)`
+export const StyledCard = styled(Card)<{ isOpaque: boolean }>`
   border: 1px solid rgba(0,0,0,0.6);
   width: 45px;
   height: 70px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.7);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 4px;
   margin-right: 4px;
+  opacity: ${props => props.isOpaque === true 
+    ? 1
+    : 0.5};
+  background-color: ${props => props.isOpaque === true 
+    ? 'auto'
+    : 'rgba(0,0,0,1)'};
 `;
