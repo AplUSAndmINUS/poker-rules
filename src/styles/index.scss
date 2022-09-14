@@ -3,13 +3,14 @@
 
 body * {
   font-family: $font-family;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antaialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $white-color;
 }
 
 body {
-  background: url('../assets/images/table-felt.jpg') repeat center / cover;
+  // background: url('../assets/images/table-felt.jpg') repeat center / cover;
+  background: $dark-green-color;
   position: relative;
 } // need to fix image to make better dimensions and resolution
 

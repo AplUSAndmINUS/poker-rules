@@ -21,4 +21,5 @@ export const StyledCard = styled(Card)`
   align-items: center;
   justify-content: center;
   padding: 4px;
+  margin-right: 4px;
 `;

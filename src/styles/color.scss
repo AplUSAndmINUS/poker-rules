@@ -1,5 +1,6 @@
 $black-color: #000000;
 $green-color: #35654D;
+$dark-green-color: #264A38;
 $red-color: #D11613;
 $white-color: #FFFFFF;
 
@@ -13,4 +14,8 @@ $white-color: #FFFFFF;
 
 .st0White {
   fill: $white-color;
+}
+
+.st0DarkGreen {
+  fill: $dark-green-color;
 }
