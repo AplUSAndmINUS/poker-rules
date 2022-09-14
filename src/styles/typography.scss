@@ -10,9 +10,26 @@ $forma-font: forma-djr-text;
 // pro (main text): 500 weight;
 $franklin-font: franklin-gothic-condensed;
 
-h3.cardStyle {
+.cardStyle {
   font-family: $forma-font, sans-serif;
   font-weight: 900;
-  letter-spacing: -0.2px;
-  margin-bottom: 0;
+  letter-spacing: 0.7px;
+  margin-bottom: 4px;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin cardStyleParagraph {
+  font-family: $franklin-font, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+.cardStyleParagraph {
+  @include cardStyleParagraph();
+}
+
+.buttonStyle {
+  @include cardStyleParagraph();
+  font-weight: 900;
 }

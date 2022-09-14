@@ -53,8 +53,8 @@ export const RankingCard = ({
           suit={card5.suit}
           value={card5.value} />
       </div>
-      <h3 className="ps-3 mb-1">{heading}</h3>
-      <p className="mx-3 font-weight-bold lh-sm">{description}</p>
+      <h3 className="cardStyle ps-3 mb-1">{heading}</h3>
+      <p className="cardStyleParagraph mx-3 font-weight-bold lh-sm">{description}</p>
     </Card>
   ) 
 };

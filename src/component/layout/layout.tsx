@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, ButtonGroup, Navbar } from 'react-bootstrap';
 
+import '../../styles/typography.scss';
 import logo from '../../assets/images/poker-hand.png';
 
 export const NavBar = () => {
@@ -40,9 +41,9 @@ export const NavBar = () => {
           alt="Poker Reference Guide logo" />
       </Navbar.Brand>
       <ButtonGroup aria-label="Navigation options">
-        <Button href="/home" variant="outline-light">Home</Button>
-        <Button href="/rules" variant="outline-light">Rules</Button>
-        <Button href="/rankings" variant="outline-light">Hand Rankings</Button>
+        <Button className="buttonStyle" href="/home" variant="outline-light">Home</Button>
+        <Button className="buttonStyle" href="/rules" variant="outline-light">Rules</Button>
+        <Button className="buttonStyle" href="/rankings" variant="outline-light">Rankings</Button>
       </ButtonGroup>
         {/* <StyledAnchor className="nav-item nav-link disabled me-3" href="/home">Glossary</StyledAnchor> */}
     </Navbar>

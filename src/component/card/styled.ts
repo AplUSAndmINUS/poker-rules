@@ -28,5 +28,5 @@ export const StyledCard = styled(Card)<{ isOpaque: boolean }>`
     : 0.5};
   background-color: ${props => props.isOpaque === true 
     ? 'auto'
-    : 'rgba(100,100,100,0.7)'};
+    : 'rgba(195,195,195,0.75)'};
 `;
