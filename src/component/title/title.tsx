@@ -20,8 +20,8 @@ export const Title = ({
   return (
     <div
       className={isCentered
-        ? 'mt-4 mx-4 d-flex cardStyle justify-content-center align-items-baseline text-center'
-        : 'mt-4 ms-3 d-flex cardStyle justify-content-center align-items-baseline text-left'}>
+        ? 'mt-4 mx-4 d-flex cardStyle justify-content-center align-items-center text-center'
+        : 'mt-4 ms-3 d-flex cardStyle justify-content-center align-items-center text-left'}>
       {noSuits
         ? null
         : <>

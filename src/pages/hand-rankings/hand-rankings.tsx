@@ -5,6 +5,7 @@ import { CARD_RANKINGS_CARDS, CARD_RANKINGS_TEXT } from '../../assets/constants/
 import RankingCard from './ranking-card/ranking-card';
 import Title from '../../component/title/title';
 import './styled';
+import SubHeading from '../../component/subheading/subheading';
 
 // need to fix max-width issue by adding Containers, Rows, Cols
 export const Rankings = () => {
@@ -13,6 +14,11 @@ export const Rankings = () => {
       <Row>
         <Col>
           <Title heading="Rankings"/>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <SubHeading text="These are poker hand rankings listed in order of highest to lowest. You'll use these as you play various types of poker games to form your hand and melds"/>
         </Col>
       </Row>
       {/* fix column gaps later */}
