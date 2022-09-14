@@ -1,4 +1,4 @@
-interface Cards {
+export interface Cards {
   color: string;
   isOpaque: boolean;
   suit: string;

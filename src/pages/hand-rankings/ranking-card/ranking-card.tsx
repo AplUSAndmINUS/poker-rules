@@ -1,14 +1,15 @@
 import React from 'react';
 
 import PokerCard from '../../../component/card/card';
+import { Cards } from '../../../assets/constants/rankings';
 import './styled'; 
 
 interface RankingCardProps {
-  card1: String[];
-  card2: String[];
-  card3: String[];
-  card4: String[];
-  card5: String[];
+  card1: Cards;
+  card2: Cards;
+  card3: Cards;
+  card4: Cards;
+  card5: Cards;
   description: string;
   heading: string;
 }
@@ -31,29 +32,9 @@ export const RankingCard = ({
           isOpaque={card1.isOpaque}
           suit={card1.suit}
           value={card1.value} />
-        <PokerCard
-          color={CARD_RANKINGS_CARDS[0].cards[1].color}
-          isOpaque={CARD_RANKINGS_CARDS[0].cards[1].isOpaque}
-          suit={CARD_RANKINGS_CARDS[0].cards[1].suit}
-          value={CARD_RANKINGS_CARDS[0].cards[1].value} />
-        <PokerCard
-          color={CARD_RANKINGS_CARDS[0].cards[2].color}
-          isOpaque={CARD_RANKINGS_CARDS[0].cards[2].isOpaque}
-          suit={CARD_RANKINGS_CARDS[0].cards[2].suit}
-          value={CARD_RANKINGS_CARDS[0].cards[2].value} />
-        <PokerCard
-          color={CARD_RANKINGS_CARDS[0].cards[3].color}
-          isOpaque={CARD_RANKINGS_CARDS[0].cards[3].isOpaque}
-          suit={CARD_RANKINGS_CARDS[0].cards[3].suit}
-          value={CARD_RANKINGS_CARDS[0].cards[3].value} />
-        <PokerCard
-          color={CARD_RANKINGS_CARDS[0].cards[4].color}
-          isOpaque={CARD_RANKINGS_CARDS[0].cards[4].isOpaque}
-          suit={CARD_RANKINGS_CARDS[0].cards[4].suit}
-          value={CARD_RANKINGS_CARDS[0].cards[4].value} />
       </div>
-      <h3 className="ps-3 mb-0">{CARD_RANKINGS_TEXT[0].heading}</h3>
-      <p className="mx-3 font-weight-bold" style={{ lineHeight: '20px' }}>{CARD_RANKINGS_TEXT[0].description}</p>
+      <h3 className="ps-3 mb-0">{heading}</h3>
+      <p className="mx-3 font-weight-bold" style={{ lineHeight: '20px' }}>{description}</p>
     </div>
   ) 
 };
