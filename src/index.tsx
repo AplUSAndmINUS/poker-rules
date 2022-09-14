@@ -19,10 +19,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="glossary" element={<Glossary />} />
-        <Route path="rules" element={<Rules />} />
-        <Route path="rankings" element={<Rankings />} />
-        <Route path="rules/five-card-draw" element={<FiveCardRules />} />
+        <Route path="/glossary" element={<Glossary />} />
+        <Route path="/rules" element={<Rules />} />
+        <Route path="/rankings" element={<Rankings />} />
+        <Route path="/rules/five-card-draw" element={<FiveCardRules />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
