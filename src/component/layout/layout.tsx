@@ -1,5 +1,5 @@
 import React from 'react';
-import { Anchor, Button, Container, Navbar } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 
 import logo from '../../assets/images/poker-hand.png';
 import { StyledAnchor } from './styled';
