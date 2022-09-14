@@ -3,7 +3,6 @@ import { Anchor, Button, Container, Navbar } from 'react-bootstrap';
 
 import logo from '../../assets/images/poker-hand.png';
 import { StyledAnchor } from './styled';
-import './styles.scss';
 
 export const NavBar = () => {
   return (

@@ -3,6 +3,5 @@ import { Anchor } from 'react-bootstrap';
 
 export const StyledAnchor = styled(Anchor)`
   text-decoration: none;
-  color: #FFFFFF !important;
   font-weight: 700;
 `

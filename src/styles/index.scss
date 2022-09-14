@@ -5,6 +5,7 @@ body * {
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $white-color;
 }
 
 body {
@@ -12,12 +13,11 @@ body {
   position: relative;
 } // need to fix image to make better dimensions and resolution
 
-code {
-  font-family: $font-family-monospace;
-}
 
-h1, h2, h4, h5, h6, p {
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote {
   font-family: $font-family;
+  color: $white-color !important;
   a {
     text-decoration: none;
     :hover
@@ -26,5 +26,8 @@ h1, h2, h4, h5, h6, p {
     :focus {
       color: #8C8C8C !important;
     }
+  }
+  code {
+    font-family: $font-family-monospace;
   }
 }
