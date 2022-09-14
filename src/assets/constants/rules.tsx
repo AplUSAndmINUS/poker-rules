@@ -11,6 +11,7 @@ interface GameRules {
   description: () => JSX.Element;
 }
 
+// will set up looping of buttons, rules at another time
 export const GAME_RULES_BUTTONS: GameRulesButtons[] = [
   {
     isDisabled: false,

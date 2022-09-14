@@ -3,7 +3,6 @@ import React from 'react';
 import SubHeading from '../../component/subheading/subheading';
 import Title from '../../component/title/title';
 import { HomeButton } from '../home/styled';
-import './styles.scss';
 
 export const Rules = () => {
   return (

@@ -30,7 +30,7 @@ export const Home = () => {
           size="lg"
           className="px-5 py-3 mb-2"
           disabled>Glossary (Coming soon)</HomeButton>
-        </div>
+      </div>
     </div>)
 }
 
