@@ -7,14 +7,14 @@ import './styles.scss';
 
 export const NavBar = () => {
   return (
-    <NavigationBar className="navbar navbar-dark px-4">
+    <NavigationBar className="navbar navbar-dark justify-content-left align-items-center px-4">
       <a href="/home" className="navbar-brand" style={{ display: 'flex' }}>
         <img
           src={logo}
           width="32"
           height="32"
           alt="Poker Reference Guide logo" />
-        <p className="ps-2">Poker Reference Guide</p>
+        <p className="ps-2 mb-0">Poker Reference Guide</p>
       </a>
       <Button 
         type="button"

@@ -8,8 +8,7 @@ export const Home = () => {
     <div style={{
       display: 'flex',
       flexDirection: 'row',
-      justifyContent: 'space-between',
-      width: '7%'
+      justifyContent: 'left',
     }}>
       <Card color="red" value={'10'} suit="heart" /><Card suit="spade" value={'K'}/>
     </div>)

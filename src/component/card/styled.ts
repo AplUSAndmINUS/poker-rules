@@ -7,7 +7,8 @@ const redColor = '#D11613 !important';
 export const Heading = styled.h3<{ color: string }>`
   color: ${props => props.color === 'red'
     ? redColor
-    : blackColor}; 
+    : blackColor};
+  font-size: 27px; 
 `;
 
 export const StyledCard = styled(Card)`
