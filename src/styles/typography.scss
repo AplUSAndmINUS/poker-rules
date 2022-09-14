@@ -1,17 +1,17 @@
 @import url('https://use.typekit.net/erk5qvh.css');
 
 // font families
-$font-family: '-apple-system, BlinkMacSystemFont, franklin-gothic-condensed, forma-djr-text, sans-serif';
-$font-family-monospace: 'source-code-pro, Menlo, Monaco, Consolas, monospace';
+$font-family: -apple-system, BlinkMacSystemFont, franklin-gothic-condensed, forma-djr-text, sans-serif;
+$font-family-monospace: source-code-pro, Menlo, Monaco, Consolas, monospace;
 
 // medium (headlines): 900 weight; black (cards): 900 weight; 
-$forma-font: 'forma-djr-text';
+$forma-font: forma-djr-text;
 
 // pro (main text): 500 weight;
-$franklin-font: 'franklin-gothic-condensed';
+$franklin-font: franklin-gothic-condensed;
 
 h3.cardStyle {
-  font-family: forma-djr-text, sans-serif;
+  font-family: $forma-font, sans-serif;
   font-weight: 900;
   letter-spacing: -0.2px;
   margin-bottom: 0;

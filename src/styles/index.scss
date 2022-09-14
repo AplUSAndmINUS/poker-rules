@@ -1,6 +1,7 @@
+@import './color.scss';
 @import './typography.scss';
 
-body {
+body * {
   margin: 0;
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
@@ -9,4 +10,17 @@ body {
 
 code {
   font-family: $font-family-monospace;
+}
+
+h1, h2, h4, h5, h6, p {
+  font-family: $font-family;
+  a {
+    text-decoration: none;
+    :hover
+    :visited
+    :active
+    :focus {
+      color: #8C8C8C !important;
+    }
+  }
 }
