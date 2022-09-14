@@ -8,7 +8,7 @@ import './styled';
 export const Rankings = () => {
   return (
     <div className="d-flex flex-column align-items-center">
-      <Title heading="Hand rankings"/>
+      <Title heading="Hand Rankings"/>
       <RankingCard
         card1={CARD_RANKINGS_CARDS[0]}
         card2={CARD_RANKINGS_CARDS[1]}
