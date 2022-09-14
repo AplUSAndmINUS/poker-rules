@@ -26,7 +26,6 @@ export const FiveCardRules = () => {
         isCentered={false}
         isSubHeading
         noSuits />
-      
       <SubHeading text={`In the fixed limit, bets are fixed, and there is no room for maneuvering. Pot limit allows you to size your bets any way you like, but they can never exceed the size of the pot.`} />
       <SubHeading text={`In no limit, you can bet anything between a single-blind and your entire stack at any point, it’s your turn to act.`} />
       <SubHeading text={`The first round of betting begins with the UTG player once all cards are dealt, and then the action follows based on standard poker positions.`} />

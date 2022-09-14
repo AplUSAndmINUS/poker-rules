@@ -13,7 +13,7 @@ export const Home = () => {
         isCentered={true}
         text={`Tap on a button to head to that specific page, which will help you understand poker's rules and hand rankings`} />
       <div className="d-grid gap-2"> 
-        {/* homebutton needs to be set as a component */}
+        {/* homebutton and grid need to be set as a component */}
         <HomeButton
           href="/rules"
           variant="outline-light"
