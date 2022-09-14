@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { CARD_RANKINGS_CARDS, CARD_RANKINGS_TEXT } from '../../../assets/constants/rankings';
 import PokerCard from '../../../component/card/card';
 import './styled'; 
 
@@ -25,15 +26,30 @@ export const RankingCard = ({
     <div
       className="d-flex flex-column align-items-space-between justify-content-center m-4"
       style={{ border: '1px solid #FFFFFF', borderRadius: '8px', boxShadow: '4px 4px 4px rgba(0,0,0,0.6)', backgroundColor: '#35654D' }}>
-      <div className="d-flex flex-row justify-content-left align-items-baseline p-3">
-        <PokerCard />
-        <PokerCard />
-        <PokerCard />
-        <PokerCard />
-        <PokerCard />
+      <div className="d-flex flex-row justify-content-left align-items-baseline px-3 pt-3 pb-2">
+        <PokerCard
+          color={CARD_RANKINGS_CARDS[0].cards[0].color}
+          suit={CARD_RANKINGS_CARDS[0].cards[0].suit}
+          value={CARD_RANKINGS_CARDS[0].cards[0].value} />
+        <PokerCard
+          color={CARD_RANKINGS_CARDS[0].cards[1].color}
+          suit={CARD_RANKINGS_CARDS[0].cards[1].suit}
+          value={CARD_RANKINGS_CARDS[0].cards[1].value} />
+        <PokerCard
+          color={CARD_RANKINGS_CARDS[0].cards[2].color}
+          suit={CARD_RANKINGS_CARDS[0].cards[2].suit}
+          value={CARD_RANKINGS_CARDS[0].cards[2].value} />
+        <PokerCard
+          color={CARD_RANKINGS_CARDS[0].cards[3].color}
+          suit={CARD_RANKINGS_CARDS[0].cards[3].suit}
+          value={CARD_RANKINGS_CARDS[0].cards[3].value} />
+        <PokerCard
+          color={CARD_RANKINGS_CARDS[0].cards[4].color}
+          suit={CARD_RANKINGS_CARDS[0].cards[4].suit}
+          value={CARD_RANKINGS_CARDS[0].cards[4].value} />
       </div>
-      <h3 className="ps-3 mb-0">Royal Flush</h3>
-      <p className="mx-3 font-weight-bold" style={{ lineHeight: '20px' }}>Ace, King, Queen, Jack and Ten all of the same suit</p>
+      <h3 className="ps-3 mb-0">{CARD_RANKINGS_TEXT[0].heading}</h3>
+      <p className="mx-3 font-weight-bold" style={{ lineHeight: '20px' }}>{CARD_RANKINGS_TEXT[0].description}</p>
     </div>
   ) 
 };
