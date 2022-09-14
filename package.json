@@ -30,7 +30,7 @@
   "watches": {
     "sass": "src/**"
   },
-  "homepage": "/",
+  "homepage": "",
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "poker-rules -d build -b master",
