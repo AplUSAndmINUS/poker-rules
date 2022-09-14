@@ -10,12 +10,16 @@ $forma-font: forma-djr-text;
 // pro (main text): 500 weight;
 $franklin-font: franklin-gothic-condensed;
 
-.cardStyle {
+@mixin cardStyle {
   font-family: $forma-font, sans-serif;
   font-weight: 900;
   letter-spacing: 0.7px;
   margin-bottom: 4px;
   -webkit-font-smoothing: antialiased;
+}
+
+.cardStyle {
+  @include cardStyle();
 }
 
 @mixin cardStyleParagraph {
@@ -27,6 +31,12 @@ $franklin-font: franklin-gothic-condensed;
 }
 .cardStyleParagraph {
   @include cardStyleParagraph();
+}
+
+.cardStyleSubheading {
+  @include cardStyle();
+  font-size: 15px;
+  text-align: left !important;
 }
 
 .buttonStyle {

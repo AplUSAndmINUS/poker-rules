@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/home/home';
+import { FiveCardRules } from './pages/rules/game-types/five-card-draw';
 import Glossary from './pages/glossary/glossary';
 import Layout from './component/layout/layout';
 import NotFound from './pages/404/404';
@@ -22,6 +23,7 @@ root.render(
         <Route path="glossary" element={<Glossary />} />
         <Route path="rules" element={<Rules />} />
         <Route path="rankings" element={<Rankings />} />
+        <Route path="rules/five-card-draw" element={<FiveCardRules />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
