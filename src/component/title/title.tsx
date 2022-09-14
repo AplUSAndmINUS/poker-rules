@@ -11,7 +11,9 @@ interface TitleProps {
 
 export const Title = ({ heading = "Title" }: TitleProps) => {
   return (
-    <div className="mt-4 d-flex justify-content-center align-items-baseline">
+    <div
+      className="mt-4 d-flex justify-content-center align-items-baseline text-titlecase"
+      style={{ textTransform: 'titlecase' }}>
       <Club size={24} />
       <Diamond size={24} />
       <h1 className="mx-2">{heading}</h1>
