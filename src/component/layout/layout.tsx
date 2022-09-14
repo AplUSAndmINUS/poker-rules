@@ -41,8 +41,8 @@ export const NavBar = () => {
       </Navbar.Brand>
       <ButtonGroup aria-label="Navigation options">
         <Button href="/home" variant="outline-light">Home</Button>
-        <Button href="/games" variant="outline-light">Games</Button>
-        <Button href="rankings" variant="outline-light">Hand Rankings</Button>
+        <Button href="/rules" variant="outline-light">Rules</Button>
+        <Button href="/rankings" variant="outline-light">Hand Rankings</Button>
       </ButtonGroup>
         {/* <StyledAnchor className="nav-item nav-link disabled me-3" href="/home">Glossary</StyledAnchor> */}
     </Navbar>

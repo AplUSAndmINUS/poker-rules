@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 
+import { HomeButton } from './styled';
 import SubHeading from '../../component/subheading/subheading';
 import Title from '../../component/title/title';
-import './styles.scss';
+import './styled';
 
 export const Home = () => {
   return (
@@ -12,10 +12,23 @@ export const Home = () => {
       <SubHeading
         isCentered={true}
         text={`Tap on a button to head to that specific page, which will help you understand poker's rules and hand rankings`} />
-      <div className="d-flex flex-column align-items-space-between justify-content-center">
-        <Button>Button 1</Button>
-        <Button>Button 2</Button>
-        <Button>Button 3</Button>
+      <div className="d-grid gap-2">
+        <HomeButton
+          href="/rules"
+          variant="outline-light"
+          size="lg"
+          className="px-5 py-3 mb-2">Game Rules</HomeButton>
+        <HomeButton
+          href="/rankings"
+          variant="outline-light"
+          size="lg"
+          className="px-5 py-3 mb-2">Poker Hand Rankings</HomeButton>
+        <HomeButton
+          href="/glossary"
+          variant="outline-light"
+          size="lg"
+          className="px-5 py-3 mb-2"
+          disabled>Glossary (Coming soon)</HomeButton>
         </div>
     </div>)
 }

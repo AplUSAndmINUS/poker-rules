@@ -6,7 +6,7 @@ interface SubheadingProps {
 }
 
 export const SubHeading = ({ isCentered = false, text = 'Subheading' }: SubheadingProps) => {
-  return <p className={isCentered ? 'mx-4 text-center' : 'mx-4'}>{text}</p>
+  return <p className={isCentered ? 'mb-4 mx-4 text-center' : 'mb-4 mx-4'}>{text}</p>
 }
 
 export default SubHeading;
