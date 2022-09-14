@@ -101,31 +101,31 @@ export const CARD_RANKINGS_CARDS: Cards[] = [
     color: 'black',
     isOpaque: true,
     suit: 'spade',
-    value: '2',
+    value: 'J',
   },
   {
     color: 'black',
     isOpaque: true,
     suit: 'club',
-    value: '2',
-  },
-  {
-    color: 'red',
-    isOpaque: true,
-    suit: 'heart',
-    value: '2',
+    value: 'J',
   },
   {
     color: 'red',
     isOpaque: true,
     suit: 'heart',
     value: 'J',
+  },
+  {
+    color: 'red',
+    isOpaque: true,
+    suit: 'heart',
+    value: '2',
   },
   {
     color: 'red',
     isOpaque: true,
     suit: 'diamond',
-    value: 'J',
+    value: '2',
   }, // end full house
   { // flush
     color: 'black',
@@ -182,7 +182,7 @@ export const CARD_RANKINGS_CARDS: Cards[] = [
     value: '4',
   },
   {
-    color: 'black',
+    color: 'red',
     isOpaque: true,
     suit: 'diamond',
     value: '5',
@@ -242,10 +242,10 @@ export const CARD_RANKINGS_CARDS: Cards[] = [
     value: '9',
   },
   {
-    color: 'red',
+    color: 'black',
     isOpaque: false,
-    suit: 'diamond',
-    value: '4',
+    suit: 'club',
+    value: '5',
   }, // end two pair
   { // pair
     color: 'black',
@@ -262,8 +262,8 @@ export const CARD_RANKINGS_CARDS: Cards[] = [
   {
     color: 'black',
     isOpaque: false,
-    suit: 'spade',
-    value: '4',
+    suit: 'club',
+    value: 'A',
   },
   {
     color: 'red',
@@ -275,13 +275,19 @@ export const CARD_RANKINGS_CARDS: Cards[] = [
     color: 'black',
     isOpaque: false,
     suit: 'spade',
-    value: 'A',
+    value: '4',
   }, // end pair
   { // high card
     color: 'black',
     isOpaque: true,
     suit: 'club',
     value: 'K',
+  },
+  {
+    color: 'red',
+    isOpaque: false,
+    suit: 'heart',
+    value: '10',
   },
   {
     color: 'black',
@@ -298,13 +304,7 @@ export const CARD_RANKINGS_CARDS: Cards[] = [
   {
     color: 'red',
     isOpaque: false,
-    suit: 'heart',
-    value: '10',
-  },
-  {
-    color: 'black',
-    isOpaque: false,
-    suit: 'spade',
+    suit: 'diamond',
     value: '2',
   } // end high card
 ]
