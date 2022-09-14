@@ -30,7 +30,7 @@
   "watches": {
     "sass": "src/**"
   },
-  "homepage": "/",
+  "homepage": "https://terencewaters.com/poker-rules/",
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "poker-rules -d build -b master",
